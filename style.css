@@ -1,55 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #222;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 1rem;
 }
 
 header {
-  background: #222;
+  background: #d50000;
   color: white;
-  padding: 1rem 0;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-nav ul {
-  list-style: none;
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.hero {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  padding: 2rem 0;
 }
 
-nav a {
-  color: #ddd;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  margin: 2rem 0;
-  background: white;
-  padding: 1rem;
+.hero img {
+  max-width: 300px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.bio, .highlights, .quote {
+  padding: 2rem;
+  background: white;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.highlights .gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.highlights img {
+  max-width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.quote blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
 }
 
 footer {
   text-align: center;
-  margin-top: 3rem;
   font-size: 0.9rem;
+  padding: 1rem;
+  background: #eee;
   color: #666;
 }
