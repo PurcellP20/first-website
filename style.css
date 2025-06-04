@@ -1,13 +1,20 @@
+:root {
+  --maryland-red: #e21833;
+  --maryland-yellow: #ffd600;
+  --maryland-black: #000000;
+  --light-gray: #f5f5f5;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
-  color: #222;
+  background: var(--light-gray);
+  color: var(--maryland-black);
   line-height: 1.6;
 }
 
 header {
-  background: #d50000;
+  background: var(--maryland-red);
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -32,7 +39,7 @@ header p {
 .hero img {
   max-width: 300px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .bio, .highlights, .quote {
@@ -41,7 +48,8 @@ header p {
   margin: 1rem auto;
   max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-left: 8px solid var(--maryland-yellow);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .highlights .gallery {
@@ -54,20 +62,23 @@ header p {
 .highlights img {
   max-width: 250px;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--maryland-red);
 }
 
 .quote blockquote {
   font-style: italic;
   font-size: 1.2rem;
   text-align: center;
-  color: #555;
+  color: var(--maryland-black);
+  border-left: 4px solid var(--maryland-yellow);
+  padding-left: 1rem;
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
   padding: 1rem;
-  background: #eee;
-  color: #666;
+  background: var(--maryland-black);
+  color: white;
 }
